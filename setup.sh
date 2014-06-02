@@ -29,5 +29,7 @@ for file in $files; do
 done
 
 # Update git submodules to get vim-plugins working
+echo "Initializing git submodules for vim-plugins"
 git submodule init
+echo "Updating git submodules for vim-plugins"
 git submodule update
