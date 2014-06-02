@@ -3,4 +3,4 @@ bin
 *~
 *.swp
 *.swo
-*vim/view/*
+~/.vim/view/*
