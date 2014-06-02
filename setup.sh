@@ -27,3 +27,7 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+# Update git submodules to get vim-plugins working
+git submodule init
+git submodule update
