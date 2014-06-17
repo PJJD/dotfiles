@@ -144,7 +144,8 @@ call matchadd('ColorColumn', '\%80v', 100)
 
 "" Filetype templates
 "" Python
-autocmd BufNewfile *.py 0r ~/.vim/skeletons/skeleton.py
+"autocmd BufNewfile *.py 0r ~/.vim/skeletons/skeleton.py
+let g:pymode_trim_whitespaces = 0
 autocmd BufNewFile,BufWinEnter *.py set filetype=python
 map <F7> :PymodeLint<CR>
 
