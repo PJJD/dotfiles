@@ -169,5 +169,8 @@ let g:haddock_browser = "/usr/bin/firefox"
 
 " gundo.vim
 nnoremap <Leader>u :GundoToggle<CR>
+let g:gundo_right = 1
+let g:gundo_preview_bottome = 1
 
-
+" Ack.vim
+ let g:ackprg = 'ag --nogroup --nocolor --column'
