@@ -1,11 +1,20 @@
 " PJ's VIM configuration
 
-set nu
+set relativenumber
 set nocompatible
 set autowrite
 set history=700
 set ruler
 set cmdheight=2
+set noautochdir
+au FocusLost * :wa
+
+" Remap caps-lock
+au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
+" Normal regexes for searching
+nnoremap / /\v
+vnoremap / /\v
 
 " Rebind <Leader> key
 let mapleader=","
@@ -23,6 +32,9 @@ set incsearch
 " Make search results highlight
 set showmatch
 set mat=2
+
+" Clear search results
+nnoremap <leader><space> :noh<cr>
 
 " And distinguish the active match
 nnoremap <silent> n   n:call HLNext(0.5)<cr>
@@ -143,8 +155,7 @@ highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%80v', 100) 
 
 "" Filetype templates
-"" Python
-"autocmd BufNewfile *.py 0r ~/.vim/skeletons/skeleton.py
+" Python
 let g:pymode_trim_whitespaces = 0
 autocmd BufNewFile,BufWinEnter *.py set filetype=python
 map <F7> :PymodeLint<CR>
@@ -158,3 +169,5 @@ let g:haddock_browser = "/usr/bin/firefox"
 
 " gundo.vim
 nnoremap <Leader>u :GundoToggle<CR>
+
+
