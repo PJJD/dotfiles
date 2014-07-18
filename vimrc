@@ -160,6 +160,9 @@ let g:pymode_trim_whitespaces = 0
 autocmd BufNewFile,BufWinEnter *.py set filetype=python
 map <F7> :PymodeLint<CR>
 
+" Python-mode
+let g:pymode_rope = 0
+
 " XML
 let g:xml_syntax_folding=1
 autocmd FileType xml setlocal foldmethod=syntax
