@@ -161,7 +161,7 @@ autocmd BufNewFile,BufWinEnter *.py set filetype=python
 map <F7> :PymodeLint<CR>
 
 " Python-mode
-let g:pymode_rope = 0
+let g:pymode_rope = 0 " to use jedi-vim for autocompletion
 
 " XML
 let g:xml_syntax_folding=1
