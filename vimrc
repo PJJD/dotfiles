@@ -145,7 +145,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " NERDTree
-noremap <Leader>n :NERDTreeToggle<CR>
+noremap <Leader>m :NERDTreeToggle<CR>
 
 " Mistypings...
 :iabbrev teh the
