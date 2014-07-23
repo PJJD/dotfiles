@@ -19,6 +19,9 @@ vnoremap / /\v
 " Rebind <Leader> key
 let mapleader=","
 
+vnoremap <leader>t <Esc>:tabnew<CR>
+nnoremap <leader>t <Esc>:tabnew<CR>
+
 " Make copy-paste useable
 set clipboard=unnamed
 
@@ -126,10 +129,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-"" Easy navigation between tabs
-map <Leader>T <esc>:tabprevious<CR>
-map <Leader>t <esc>:tabnext<CR>
-
 " Look for a tags-file from the current directory up
 set tags=./tags;/
 
@@ -161,7 +160,7 @@ autocmd BufNewFile,BufWinEnter *.py set filetype=python
 map <F7> :PymodeLint<CR>
 
 " Python-mode
-let g:pymode_rope = 0
+let g:pymode_rope = 0 " to use jedi-vim for autocompletion
 
 " XML
 let g:xml_syntax_folding=1
