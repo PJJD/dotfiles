@@ -119,6 +119,7 @@ PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/camelot"
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/wingdb"
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs"
 export PYTHONPATH
+
 # Use Jedi completion in python interpreter
 export PYTHONSTARTUP="$(python -m jedi repl)"
 
