@@ -113,11 +113,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Python
 # set PYTHONPATH
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/camelot"
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/wingdb"
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs"
 export PYTHONPATH
+# Use Jedi completion in python interpreter
+export PYTHONSTARTUP="$(python -m jedi repl)"
 
 set -o vi
 shopt -s cdable_vars
