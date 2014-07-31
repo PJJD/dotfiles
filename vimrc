@@ -1,6 +1,7 @@
 " PJ's VIM configuration
 
 set relativenumber
+set nu
 set nocompatible
 set autowrite
 set history=700
@@ -176,3 +177,9 @@ let g:gundo_preview_bottome = 1
 
 " Ack.vim
  let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Rainbow parentheses
+" au VimEnter * RainbowParenthesesToggle
+" au Syntax * RainbowParenthesesLoadRound
+" au Syntax * RainbowParenthesesLoadSquare
+" au Syntax * RainbowParenthesesLoadBraces
