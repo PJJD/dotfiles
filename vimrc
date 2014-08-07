@@ -8,6 +8,7 @@ set history=700
 set ruler
 set cmdheight=2
 set noautochdir
+set cursorline
 au FocusLost * :wa
 
 " Remap caps-lock
@@ -120,8 +121,8 @@ filetype indent on
 set foldmethod=syntax
 
 "" Make folds persistent between editing sessions
-autocmd BufWinLeave *.* mkview!
-autocmd BufWinEnter *.* silent loadview
+"autocmd BufWinLeave *.* mkview!
+"autocmd BufWinEnter *.* silent loadview
 
 "" Easy navigation between windows
 nnoremap <C-h> <C-w>h
@@ -151,7 +152,7 @@ noremap <Leader>m :NERDTreeToggle<CR>
 
 " Keep line length to 80 columns max (just a warning)
 highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%80v', 100) 
+call matchadd('ColorColumn', '\%80v', 100)
 
 "" Filetype templates
 " Python
