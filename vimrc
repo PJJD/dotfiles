@@ -130,6 +130,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+"" Better window-splits
+set splitbelow
+set splitright
+
 " Look for a tags-file from the current directory up
 set tags=./tags;/
 
