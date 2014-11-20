@@ -121,7 +121,7 @@ PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs"
 export PYTHONPATH
 
 # Use Jedi completion in python interpreter
-export PYTHONSTARTUP="$(python -m jedi repl)"
+#export PYTHONSTARTUP="$(python -m jedi repl)"
 
 set -o vi
 shopt -s cdable_vars
@@ -141,3 +141,6 @@ export PYTHONDOCS=/usr/share/doc/python2/html/
 
 ## To get 256 color-support in tmux
 alias tmux='tmux -2'
+
+# added by Anaconda3 2.1.0 installer
+# export PATH="/home/pjd/anaconda3/bin:$PATH"
