@@ -121,8 +121,8 @@ filetype indent on
 set foldmethod=syntax
 
 "" Make folds persistent between editing sessions
-"autocmd BufWinLeave *.* mkview!
-"autocmd BufWinEnter *.* silent loadview
+autocmd BufWinLeave *.* mkview!
+autocmd BufWinEnter *.* silent loadview
 
 "" Easy navigation between windows
 nnoremap <C-h> <C-w>h
@@ -182,15 +182,6 @@ nnoremap <Leader>u :GundoToggle<CR>
 let g:gundo_right = 1
 let g:gundo_preview_bottome = 1
 
-" Ack.vim
- let g:ackprg = 'ag --nogroup --nocolor --column'
-
 " Set postgres to default sql dialect
  let g:sql_type_default = 'postgresql'
 
-
-" Rainbow parentheses
-" au VimEnter * RainbowParenthesesToggle
-" au Syntax * RainbowParenthesesLoadRound
-" au Syntax * RainbowParenthesesLoadSquare
-" au Syntax * RainbowParenthesesLoadBraces
