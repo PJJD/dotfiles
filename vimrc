@@ -165,10 +165,10 @@ autocmd BufNewFile *.py silent! 0r ~/dotfiles/vim/skeletons/py.skel
 autocmd FileType python setlocal completeopt-=preview
 
 " Python-mode
-"let g:pymode_rope = 0 " to use jedi-vim for autocompletion
-"let g:pymode_trim_whitespaces = 0
-"let g:pymode_lint_on_write = 0
-"map <F7> :PymodeLint<CR>
+let g:pymode_rope = 0 " to use jedi-vim for autocompletion
+let g:pymode_trim_whitespaces = 0
+let g:pymode_lint_on_write = 0
+map <F7> :PymodeLint<CR>
 
 " XML
 let g:xml_syntax_folding=1

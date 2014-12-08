@@ -137,6 +137,7 @@ export EDITOR='/usr/bin/vim'
 
 export PATH=/usr/lib/qt4/bin:$PATH
 export PATH=~/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 export PYTHONDOCS=/usr/share/doc/python2/html/
 
 ## To get 256 color-support in tmux
