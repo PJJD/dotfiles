@@ -174,9 +174,6 @@ map <F7> :PymodeLint<CR>
 let g:xml_syntax_folding=1
 autocmd FileType xml setlocal foldmethod=syntax
 
-" Haskell
-let g:haddock_browser = "/usr/bin/firefox"
-
 " gundo.vim
 nnoremap <Leader>u :GundoToggle<CR>
 let g:gundo_right = 1
