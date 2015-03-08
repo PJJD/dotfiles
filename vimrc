@@ -1,5 +1,12 @@
 " PJ's VIM configuration
 
+" Load Pathogen
+runtime! autoload/pathogen.vim
+if exists("*pathogen#infect")
+    call pathogen#infect()
+endif
+
+" Sane defaults
 set relativenumber
 set nu
 set nocompatible
@@ -106,11 +113,6 @@ set laststatus=2
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
-" Load Pathogen
-runtime! autoload/pathogen.vim
-if exists("*pathogen#infect")
-    call pathogen#infect()
-endif
 
 " Make sure filetype specific configurations are being loaded
 filetype on
