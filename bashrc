@@ -120,6 +120,9 @@ PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/wingdb"
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs"
 export PYTHONPATH
 
+# set python debugger path
+export DEBUGGER_PATH="/home/pjd/python_libs/wingdb"
+
 # Use Jedi completion in python interpreter
 #export PYTHONSTARTUP="$(python -m jedi repl)"
 
@@ -137,7 +140,6 @@ export EDITOR='/usr/bin/vim'
 
 export PATH=/usr/lib/qt4/bin:$PATH
 export PATH=~/bin:$PATH
-export PATH=/usr/local/bin:$PATH
 export PYTHONDOCS=/usr/share/doc/python2/html/
 
 ## To get 256 color-support in tmux
@@ -145,3 +147,5 @@ alias tmux='tmux -2'
 
 # added by Anaconda3 2.1.0 installer
 # export PATH="/home/pjd/anaconda3/bin:$PATH"
+
+#export UNIT_TEST_TEMPLATE_FOLDERS="/home/pjd/workspace/v-finance-templates-patronale/templates"
