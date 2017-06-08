@@ -122,10 +122,6 @@ filetype indent on
 "" fold settings
 set foldmethod=syntax
 
-"" Make folds persistent between editing sessions
-autocmd BufWinLeave *.* mkview!
-autocmd BufWinEnter *.* silent loadview
-
 "" Easy navigation between windows
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -160,27 +156,7 @@ noremap <Leader>m :NERDTreeToggle<CR>
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%80v', 100)
 
-"" Filetype templates
-" Python
-autocmd BufNewFile,BufWinEnter *.py set filetype=python
-autocmd BufNewFile *.py silent! 0r ~/dotfiles/vim/skeletons/py.skel
-autocmd FileType python setlocal completeopt-=preview
 
-" Python-mode
-let g:pymode_rope = 0 " to use jedi-vim for autocompletion
-let g:pymode_trim_whitespaces = 0
-let g:pymode_lint_on_write = 0
-map <F7> :PymodeLint<CR>
-
-" XML
-let g:xml_syntax_folding=1
-autocmd FileType xml setlocal foldmethod=syntax
-
-" gundo.vim
-nnoremap <Leader>u :GundoToggle<CR>
-let g:gundo_right = 1
-let g:gundo_preview_bottome = 1
-
-" Set postgres to default sql dialect
- let g:sql_type_default = 'postgresql'
-
+" deoplete
+let g:deoplete#enable_at_startup = 1
+" inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
