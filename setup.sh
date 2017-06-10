@@ -9,6 +9,19 @@ files="bashrc vimrc vim gitignore tmux.conf" # list of files/folders to symlink 
 
 ##########
 
+# Install kupfer
+sudo apt install kupfer
+
+# Install tmux
+sudo apt install tmux
+
+# Installing Neovim and prerequisites
+sudo apt install software-properties-common python-software-properties python-dev python-pip python3-dev python3-pip
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt update
+sudo apt install neovim
+
+
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
 mkdir -p $olddir
@@ -32,3 +45,11 @@ echo "Initializing git submodules for vim-plugins"
 git submodule init
 echo "Updating git submodules for vim-plugins"
 git submodule update
+
+# Make neovim reference the vim directories
+ln -s ~/.vim ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+
+# Install jedi
+sudo pip install jedi
+sudo pip3 install jedi

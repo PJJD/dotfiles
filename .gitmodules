@@ -2,5 +2,17 @@
 	path = vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
+	path = ~/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/deoplete.nvim"]
+	path = ~/.vim/bundle/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim
+[submodule "vim/bundle/deoplete-jedi"]
+	path = ~/.vim/bundle/deoplete-jedi
+	url = https://github.com/zchee/deoplete-jedi.git
+[submodule "vim/bundle/vim-solidity"]
+	path = ~/.vim/bundle/vim-solidity
+	url = https://github.com/tomlion/vim-solidity.git
+[submodule "vim/bundle/vim-airline"]
+	path = ~/.vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
