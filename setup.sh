@@ -50,6 +50,6 @@ git submodule update
 ln -s ~/.vim ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 
-# Install jedi
-sudo pip install jedi
-sudo pip3 install jedi
+# Install jedi and python support for neovim
+sudo pip install jedi neovim
+sudo pip3 install jedi neovim
