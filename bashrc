@@ -115,7 +115,6 @@ fi
 
 # Python
 # set PYTHONPATH
-PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/camelot"
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/wingdb"
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs"
 export PYTHONPATH
@@ -130,22 +129,14 @@ set -o vi
 shopt -s cdable_vars
 shopt -s extglob
 ## Use vim instead of vi, aliased parameters can be passed
-alias vi='/usr/bin/vim '
+alias vi='/usr/bin/nvim '
 ## Makes aliased directories cd-able
 alias cd='cd '
 
 HISTTIMEFORMAT='%a %d/%m/%Y %H:%M:%S%t'
 
-export EDITOR='/usr/bin/vim'
-
-export PATH=/usr/lib/qt4/bin:$PATH
-export PATH=~/bin:$PATH
-export PYTHONDOCS=/usr/share/doc/python2/html/
+export EDITOR='/usr/bin/nvim'
 
 ## To get 256 color-support in tmux
 alias tmux='tmux -2'
 
-# added by Anaconda3 2.1.0 installer
-# export PATH="/home/pjd/anaconda3/bin:$PATH"
-
-#export UNIT_TEST_TEMPLATE_FOLDERS="/home/pjd/workspace/v-finance-templates-patronale/templates"
