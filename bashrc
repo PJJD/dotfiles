@@ -115,9 +115,8 @@ fi
 
 # Python
 # set PYTHONPATH
-PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/camelot"
 PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/wingdb"
-PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs"
+PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/"
 export PYTHONPATH
 
 # set python debugger path
@@ -130,20 +129,27 @@ set -o vi
 shopt -s cdable_vars
 shopt -s extglob
 ## Use vim instead of vi, aliased parameters can be passed
-alias vi='/usr/bin/vim '
+alias vi='/usr/bin/nvim '
+alias vim='/usr/bin/nvim '
 ## Makes aliased directories cd-able
 alias cd='cd '
 
+## Always use python3
+alias python='/usr/bin/python3'
+alias pip='/usr/bin/pip3'
+
 HISTTIMEFORMAT='%a %d/%m/%Y %H:%M:%S%t'
 
-export EDITOR='/usr/bin/vim'
+export EDITOR='/usr/bin/nvim'
 
 export PATH=/usr/lib/qt4/bin:$PATH
 export PATH=~/bin:$PATH
-export PYTHONDOCS=/usr/share/doc/python2/html/
 
 ## To get 256 color-support in tmux
 alias tmux='tmux -2'
+
+## autocorrect mistypings
+eval $(thefuck --alias)
 
 # added by Anaconda3 2.1.0 installer
 # export PATH="/home/pjd/anaconda3/bin:$PATH"
