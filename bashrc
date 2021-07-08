@@ -149,7 +149,7 @@ export PATH=~/bin:$PATH
 alias tmux='tmux -2'
 
 ## autocorrect mistypings
-eval $(thefuck --alias)
+#eval $(thefuck --alias)
 
 # added by Anaconda3 2.1.0 installer
 # export PATH="/home/pjd/anaconda3/bin:$PATH"
