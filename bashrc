@@ -113,11 +113,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Python
-# set PYTHONPATH
-PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/wingdb"
-PYTHONPATH="${PYTHONPATH}:/home/pjd/python_libs/"
-export PYTHONPATH
 
 # set python debugger path
 export DEBUGGER_PATH="/home/pjd/python_libs/wingdb"
@@ -155,3 +150,5 @@ alias tmux='tmux -2'
 # export PATH="/home/pjd/anaconda3/bin:$PATH"
 
 #export UNIT_TEST_TEMPLATE_FOLDERS="/home/pjd/workspace/v-finance-templates-patronale/templates"
+
+source /etc/profile
